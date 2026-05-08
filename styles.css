@@ -88,3 +88,24 @@ input[placeholder*="Buscar"]::placeholder,
 input[placeholder*="buscar"]::placeholder {
   color: #f7e8d8 !important;
 }
+
+/* Zona de búsqueda/filtros */
+[class*="filter"],
+[class*="Filter"],
+[class*="search"],
+[class*="Search"] {
+  background: #6f4e37 !important;
+  color: white !important;
+}
+
+[class*="filter"] *,
+[class*="Filter"] *,
+[class*="search"] *,
+[class*="Search"] * {
+  color: white !important;
+}
+
+button,
+button * {
+  color: white !important;
+}
