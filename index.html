@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f1e8" />
+    <title>Borjis Coffe style</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Helvetica Neue", "Helvetica", "Arial", "ui-sans-serif", "system-ui", "sans-serif"],
+              serif: ["Helvetica Neue", "Helvetica", "Arial", "ui-sans-serif", "system-ui", "sans-serif"]
+            },
+            colors: {
+              coffee: {
+                ink: "#26231f",
+                roast: "#75675b",
+                crema: "#f5f1e8",
+                milk: "#fffdf8",
+                foam: "#ddd3c4",
+                gold: "#b98656",
+                sage: "#d8dfcf",
+                aqua: "#cbd8bd",
+                aquaDeep: "#667855",
+                amber: "#d49a5f",
+                rose: "#bd6c5f"
+              }
+            },
+            boxShadow: {
+              soft: "0 18px 50px rgba(32, 26, 23, 0.12)"
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.3.1",
+          "react-dom/client": "https://esm.sh/react-dom@18.3.1/client"
+        }
+      }
+    </script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
